@@ -41,6 +41,20 @@
     </script>
     
     <script>
+    var buildUrl = "Build";
+    var loaderUrl = buildUrl + "/WarriorsBuild.loader.js";
+    var config = {
+      dataUrl: buildUrl + "/WarriorsBuild.data",
+      frameworkUrl: buildUrl + "/WarriorsBuild.framework.js",
+      codeUrl: buildUrl + "/WarriorsBuild.wasm",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "DefaultCompany",
+      productName: "WarriorsBot",
+      productVersion: "0.1",
+      showBanner: unityShowBanner,
+    };
+
+
     var script = document.createElement("script");
     script.src = loaderUrl;
 
