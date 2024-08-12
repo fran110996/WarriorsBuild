@@ -121,9 +121,11 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
               }).then((unityInstance) => {
-                console.log(window.TelegramGameProxy.initParams);
-                unityInstance.SendMessage("TelegramController", "SetWebAppUser", JSON.stringify(window.TelegramGameProxy.initParams));
+                // console.log(window.TelegramGameProxy.initParams);
+                unityInstance.SendMessage("TelegramController", "SetWebAppUser", "15125125");
+                // unityInstance.SendMessage("TelegramController", "SetWebAppUser", JSON.stringify(window.TelegramGameProxy.initParams));
                 loadingBar.style.display = "none";
+                unityInstance.SetFullscreen(1);
                 fullscreenButton.onclick = () => {
                   unityInstance.SetFullscreen(1);
                 };
