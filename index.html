@@ -122,8 +122,8 @@
           progressBarFull.style.width = 100 * progress + "%";
               }).then((unityInstance) => {
                 // console.log(window.TelegramGameProxy.initParams);
-                unityInstance.SendMessage("TelegramController", "SetWebAppUser",window.Telegram.WebApp.initDataUnsafe.user.id);
-              unityInstance.SendMessage("TelegramController", "SetWebAppName",window.Telegram.WebApp.initDataUnsafe.user.first_name);
+                //comentunityInstance.SendMessage("TelegramController", "SetWebAppUser",window.Telegram.WebApp.initDataUnsafe.user.id);
+                //comentunityInstance.SendMessage("TelegramController", "SetWebAppName",window.Telegram.WebApp.initDataUnsafe.user.first_name);
                 // unityInstance.SendMessage("TelegramController", "SetWebAppUser", JSON.stringify(window.TelegramGameProxy.initParams));
                 loadingBar.style.display = "none";
                unityInstance.SetFullscreen(1);
